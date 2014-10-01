@@ -6,40 +6,40 @@
 
 ## <a name='TOC'>Taula de Contingut</a>
 
-  1. [Tipos](#types)
-  1. [Objetos](#objects)
+  1. [Tipus](#types)
+  1. [Objectes](#objects)
   1. [Arreglos](#arrays)
-  1. [Cadenas de Texto](#strings)
-  1. [Funciones](#functions)
-  1. [Propiedades](#properties)
+  1. [Cadenes de Text](#strings)
+  1. [Funcions](#functions)
+  1. [Propietats](#properties)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Expresiones condicionales e igualdad](#conditionals)
-  1. [Bloques](#blocks)
-  1. [Comentarios](#comments)
-  1. [Espacios en blanco](#whitespace)
-  1. [Comas](#commas)
-  1. [Puntos y Comas](#semicolons)
+  1. [Blocs](#blocks)
+  1. [Comentaris](#comments)
+  1. [Espais en blanc](#whitespace)
+  1. [Comes](#commas)
+  1. [Punts i comes](#semicolons)
   1. [Casting de Tipos & Coerción](#type-coercion)
-  1. [Convenciones de nomenclatura](#naming-conventions)
-  1. [Funciones de Acceso](#accessors)
-  1. [Constructores](#constructors)
-  1. [Eventos](#events)
-  1. [Módulos](#modules)
+  1. [Convencions de nomenclatura](#naming-conventions)
+  1. [Funcions d'Accés](#accessors)
+  1. [Constructors](#constructors)
+  1. [Events](#events)
+  1. [Móduls](#modules)
   1. [jQuery](#jquery)
-  1. [Compatibilidad con ES5](#es5)
-  1. [Pruebas](#testing)
+  1. [Compatibilitat amb ES5](#es5)
+  1. [Proves](#testing)
   1. [Desempeño](#performance)
   1. [Recursos](#resources)
   1. [En la cancha](#in-the-wild)
-  1. [Traducciones](#translation)
+  1. [Traduccions](#translation)
   1. [La guía de la Guía del Estilo JavaScript](#guide-guide)
   1. [Colaboradores](#contributors)
-  1. [Licencia](#license)
+  1. [Llicencia](#license)
 
-## <a name='types'>Tipos</a>
+## <a name='types'>Tipus</a>
 
-  - **Primitivos**: Cuando acceses a un tipo primitivo, manejas directamente su valor
+  - **Primitius**: Quan accedeixes a un tipus primitiu, utilitzes directament el seu valor
 
     + `string`
     + `number`
@@ -55,7 +55,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Complejo**: Cuando acceses a un tipo complejo, manejas la referencia a su valor.
+  - **Complex**: Quan accedeixes a un tipus compelxCuando acceses a un tipo complejo, manejas la referencia a su valor.
 
     + `object`
     + `array`
