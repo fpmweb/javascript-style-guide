@@ -4,7 +4,7 @@
 *Un enfoc raonable per JavaScript*
 
 
-## <a name='TOC'>Tabla de Contenido</a>
+## <a name='TOC'>Taula de Contingut</a>
 
   1. [Tipos](#types)
   1. [Objetos](#objects)
