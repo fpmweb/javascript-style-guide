@@ -55,7 +55,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Complex**: Quan accedeixes a un tipus compelxCuando acceses a un tipo complejo, manejas la referencia a su valor.
+  - **Complex**: Quan accedeixes a un tipus compelx, utilitzes la referencia al seu valor.
 
     + `object`
     + `array`
@@ -70,7 +70,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ rtornar a la Taula del Contingut](#TOC)**
 
 ## <a name='objects'>Objetos</a>
 
@@ -118,7 +118,7 @@
       type: 'alien'
     };
     ```
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ rtornar a la Taula del Contingut](#TOC)**
 
 ## <a name='arrays'>Arreglos</a>
 
