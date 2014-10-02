@@ -8,19 +8,19 @@
 
   1. [Tipus](#types)
   1. [Objectes](#objects)
-  1. [Arreglos](#arrays)
+  1. [Array](#arrays)
   1. [Cadenes de Text](#strings)
   1. [Funcions](#functions)
   1. [Propietats](#properties)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
-  1. [Expresiones condicionales e igualdad](#conditionals)
+  1. [Expresions condicionals i igualtat](#conditionals)
   1. [Blocs](#blocks)
   1. [Comentaris](#comments)
   1. [Espais en blanc](#whitespace)
   1. [Comes](#commas)
   1. [Punts i comes](#semicolons)
-  1. [Casting de Tipos & Coerción](#type-coercion)
+  1. [Casting de Tipus i os & Coerció](#type-coercion)
   1. [Convencions de nomenclatura](#naming-conventions)
   1. [Funcions d'Accés](#accessors)
   1. [Constructors](#constructors)
@@ -29,13 +29,13 @@
   1. [jQuery](#jquery)
   1. [Compatibilitat amb ES5](#es5)
   1. [Proves](#testing)
-  1. [Desempeño](#performance)
+  1. [Rendiment](#performance)
   1. [Recursos](#resources)
   1. [En la cancha](#in-the-wild)
   1. [Traduccions](#translation)
-  1. [La guía de la Guía del Estilo JavaScript](#guide-guide)
-  1. [Colaboradores](#contributors)
-  1. [Llicencia](#license)
+  1. [La guia de la Guia d'Estil JavaScript](#guide-guide)
+  1. [Col·laboradors](#contributors)
+  1. [Llicència](#license)
 
 ## <a name='types'>Tipus</a>
 
@@ -72,9 +72,9 @@
 
     **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
-## <a name='objects'>Objetos</a>
+## <a name='objects'>Objectes</a>
 
-  - Usa la sintaxis literal para la creación de un objeto.
+  - Utilitzeu la sintaxi literal per la creació d'objectes.
 
     ```javascript
     // mal
@@ -84,7 +84,7 @@
     var item = {};
     ```
 
-  - No uses [palabras reservadas](http://es5.github.io/#x7.6.1) como nombres. No funciona en IE8. [Más información](https://github.com/airbnb/javascript/issues/61)
+  - No utilitzeu [paraules reservades](http://es5.github.io/#x7.6.1) com a claus. No funciona amb IE8. [Més informació](https://github.com/airbnb/javascript/issues/61)
 
     ```javascript
     // mal
@@ -545,7 +545,7 @@
     }
     ```
 
-  - Para más información lee [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) por [Ben Cherry](http://www.adequatelygood.com/)
+  - Per més informació llegeix [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) per  [Ben Cherry](http://www.adequatelygood.com/)
 
     **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
