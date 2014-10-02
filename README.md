@@ -1481,14 +1481,16 @@
 
   Esta guía de estilo es también disponible en otros lenguajes:
 
-  - :de: **Alemán**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
-  - :jp: **Japonés**: [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide)
-  - :br: **Portugués**: [armoucar/javascript-style-guide](https://github.com/armoucar/javascript-style-guide)
-  - :cn: **Chino**: [adamlu/javascript-style-guide](https://github.com/adamlu/javascript-style-guide)
-  - :kr: **Coreano**: [tipjs/javascript-style-guide](https://github.com/tipjs/javascript-style-guide)
-  - :fr: **Francés**: [nmussy/javascript-style-guide](https://github.com/nmussy/javascript-style-guide)
-  - :ru: **Ruso**: [uprock/javascript](https://github.com/uprock/javascript)
-  - :bg: **Búlgaro**: [borislavvv/javascript](https://github.com/borislavvv/javascript)
+  - :de: **German**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
+  - :jp: **Japanese**: [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide)
+  - :br: **Portuguese**: [armoucar/javascript-style-guide](https://github.com/armoucar/javascript-style-guide)
+  - :cn: **Chinese**: [adamlu/javascript-style-guide](https://github.com/adamlu/javascript-style-guide)
+  - :es: **Spanish**: [paolocarrasco/javascript-style-guide](https://github.com/paolocarrasco/javascript-style-guide)
+  - :kr: **Korean**: [tipjs/javascript-style-guide](https://github.com/tipjs/javascript-style-guide)
+  - :fr: **French**: [nmussy/javascript-style-guide](https://github.com/nmussy/javascript-style-guide)
+  - :ru: **Russian**: [uprock/javascript](https://github.com/uprock/javascript)
+  - :bg: **Bulgarian**: [borislavvv/javascript](https://github.com/borislavvv/javascript)
+  - :ca: **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
 
 ## <a name='guide-guide'>La guía de la Guía de Estilos de Javascript</a>
 
