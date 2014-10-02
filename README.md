@@ -77,23 +77,23 @@
   - Utilitzeu la sintaxi literal per la creació d'objectes.
 
     ```javascript
-    // mal
+    // malament
     var item = new Object();
 
-    // bien
+    // bé
     var item = {};
     ```
 
   - No utilitzeu [paraules reservades](http://es5.github.io/#x7.6.1) com a claus. No funciona amb IE8. [Més informació](https://github.com/airbnb/javascript/issues/61)
 
     ```javascript
-    // mal
+    // malament
     var superman = {
       default: { clark: 'kent' },
       private: true
     };
 
-    // bien
+    // bé
     var superman = {
       defaults: { clark: 'kent' },
       hidden: true
@@ -103,17 +103,17 @@
   - Usa sinónimos legibles en lugar de palabras reservadas cuando sean necesarias.
 
     ```javascript
-    // mal
+    // malament
     var superman = {
       class: 'alien'
     };
 
-    // mal
+    // malament
     var superman = {
       klass: 'alien'
     };
 
-    // bien
+    // bé
     var superman = {
       type: 'alien'
     };
@@ -125,10 +125,10 @@
   - Usa la sintaxis literal para la creación de arreglos
 
     ```javascript
-    // mal
+    // malament
     var items = new Array();
 
-    // bien
+    // bé
     var items = [];
     ```
 
@@ -138,10 +138,10 @@
     var someStack = [];
 
 
-    // mal
+    // malament
     someStack[someStack.length] = 'abracadabra';
 
-    // bien
+    // bé
     someStack.push('abracadabra');
     ```
 
@@ -152,12 +152,12 @@
         itemsCopy = [],
         i;
 
-    // mal
+    // malament
     for (i = 0; i < len; i++) {
       itemsCopy[i] = items[i];
     }
 
-    // bien
+    // bé
     itemsCopy = items.slice();
     ```
 
@@ -178,16 +178,16 @@
   - Usa comillas simples `''` para las cadenas de texto
 
     ```javascript
-    // mal
+    // malament
     var name = "Bob Parr";
 
-    // bien
+    // bé
     var name = 'Bob Parr';
 
-    // mal
+    // malament
     var fullName = "Bob " + this.lastName;
 
-    // bien
+    // bé
     var fullName = 'Bob ' + this.lastName;
     ```
 
@@ -195,16 +195,16 @@
   - Nota: Cuando se usa sin criterio, las cadenas de texto largas pueden impactar en el desempeño. [jsPerf](http://jsperf.com/ya-string-concat) & [Discusión](https://github.com/airbnb/javascript/issues/40)
   
     ```javascript
-    // mal
+    // malament
     var errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
 
-    // bien
+    // bé
     var errorMessage = 'This is a super long error that was thrown because\
     of Batman. When you stop to think about how Batman had anything to do \
     with this, you would get nowhere fast.';
 
 
-    // bien
+    // bé
     var errorMessage = 'This is a super long error that was thrown because' +
       'of Batman. When you stop to think about how Batman had anything to do ' +
       'with this, you would get nowhere fast.';
@@ -231,7 +231,7 @@
 
     length = messages.length;
 
-    // mal
+    // malament
     function inbox(messages) {
       items = '<ul>';
 
@@ -242,7 +242,7 @@
       return items + '</ul>';
     }
 
-    // bien
+    // bé
     function inbox(messages) {
       items = [];
 
@@ -282,14 +282,14 @@
   - **Nota:** ECMA-262 define un bloque como una lista de sentencias. Una declaración de función no es una sentencia. [Lee la nota de ECMA-262 sobre este inconveniente](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
   
     ```javascript
-    // mal
+    // malament
     if (currentUser) {
       function test() {
         console.log('Nope.');
       }
     }
 
-    // bien
+    // bé
     var test;
     if (currentUser) {
       test = function test() {
@@ -301,12 +301,12 @@
   - Nunca nombres a un parámetro como `arguments`, esto tendrá precedencia sobre el objeto `arguments` que es brindado en cada ámbito de función.
 
     ```javascript
-    // mal
+    // malament
     function nope(name, options, arguments) {
       // ...algo...
     }
 
-    // bien
+    // bé
     function yup(name, options, args) {
       // ...algo...
     }
@@ -326,10 +326,10 @@
       age: 28
     };
 
-    // mal
+    // malament
     var isJedi = luke['jedi'];
 
-    // bien
+    // bé
     var isJedi = luke.jedi;
     ```
 
@@ -356,22 +356,22 @@
   - Siempre usa `var` para declarar variables. No hacerlo resultará en variables globales. Debemos evitar contaminar el espacio global (global namespace). El Capitán Planeta nos advirtió de eso.
 
     ```javascript
-    // mal
+    // malament
     superPower = new SuperPower();
 
-    // bien
+    // bé
     var superPower = new SuperPower();
     ```
 
   - Usa una declaración `var` para múltiples variables y declara cada variable en una nueva línea.
 
     ```javascript
-    // mal
+    // malament
     var items = getItems();
     var goSportsTeam = true;
     var dragonball = 'z';
 
-    // bien
+    // bé
     var items = getItems(),
         goSportsTeam = true,
         dragonball = 'z';
@@ -380,18 +380,18 @@
   - Declara a las variables sin asignación al final. Esto es útil cuando necesites asignar una variable luego dependiendo de una de las variables asignadas previamente, lo hace más notorio.
 
     ```javascript
-    // mal
+    // malament
     var i, len, dragonball,
         items = getItems(),
         goSportsTeam = true;
 
-    // mal
+    // malament
     var i, items = getItems(),
         dragonball,
         goSportsTeam = true,
         len;
 
-    // bien
+    // bé
     var items = getItems(),
         goSportsTeam = true,
         dragonball,
@@ -402,7 +402,7 @@
   - Asigna las variables al inicio de su ámbito. Esto ayuda a evitar inconvenientes con la declaración de variables y temas relacionados a 'hoisting'.
 
     ```javascript
-    // mal
+    // malament
     function() {
       test();
       console.log('doing stuff..');
@@ -418,7 +418,7 @@
       return name;
     }
 
-    // bien
+    // bé
     function() {
       var name = getName();
 
@@ -434,7 +434,7 @@
       return name;
     }
 
-    // mal
+    // malament
     function() {
       var name = getName();
 
@@ -445,7 +445,7 @@
       return true;
     }
 
-    // bien
+    // bé
     function() {
       if (!arguments.length) {
         return false;
@@ -573,22 +573,22 @@
   - Usa atajos.
 
     ```javascript
-    // mal
+    // malament
     if (name !== '') {
       // ...stuff...
     }
 
-    // bien
+    // bé
     if (name) {
       // ...stuff...
     }
 
-    // mal
+    // malament
     if (collection.length > 0) {
       // ...stuff...
     }
 
-    // bien
+    // bé
     if (collection.length) {
       // ...stuff...
     }
@@ -604,22 +604,22 @@
   - Usa llaves con todos los bloques de múltiples líneas.
 
     ```javascript
-    // mal
+    // malament
     if (test)
       return false;
 
-    // bien
+    // bé
     if (test) return false;
 
-    // bien
+    // bé
     if (test) {
       return false;
     }
 
-    // mal
+    // malament
     function() { return false; }
 
-    // bien
+    // bé
     function() {
       return false;
     }
@@ -633,7 +633,7 @@
   - Usa `/** ... */` para comentarios de múltiples líneas. Incluye una descripción, especificación de tipos y valores para todos los parámetros y valores de retorno.
 
     ```javascript
-    // mal
+    // malament
     // make() returns a new element
     // based on the passed in tag name
     //
@@ -646,7 +646,7 @@
       return element;
     }
 
-    // bien
+    // bé
     /**
      * make() returns a new element
      * based on the passed in tag name
@@ -665,14 +665,14 @@
   - Usa `//` para comentarios de una sola línea. Ubica los comentarios de una sola línea encima del sujeto comentado. Deja una línea en blanco antes del comentario.
 
     ```javascript
-    // mal
+    // malament
     var active = true;  // is current tab
 
-    // bien
+    // bé
     // is current tab
     var active = true;
 
-    // mal
+    // malament
     function getType() {
       console.log('fetching type...');
       // set the default type to 'no type'
@@ -681,7 +681,7 @@
       return type;
     }
 
-    // bien
+    // bé
     function getType() {
       console.log('fetching type...');
 
@@ -726,17 +726,17 @@
   - Usa indentaciones blandas (sin TAB)  establecidas en dos espacios.
 
     ```javascript
-    // mal
+    // malament
     function() {
     ∙∙∙∙var name;
     }
 
-    // mal
+    // malament
     function() {
     ∙var name;
     }
 
-    // bien
+    // bé
     function() {
     ∙∙var name;
     }
@@ -744,23 +744,23 @@
   - Deja un espacio antes de la llave de apertura.
 
     ```javascript
-    // mal
+    // malament
     function test(){
       console.log('test');
     }
 
-    // bien
+    // bé
     function test() {
       console.log('test');
     }
 
-    // mal
+    // malament
     dog.set('attr',{
       age: '1 year',
       breed: 'Bernese Mountain Dog'
     });
 
-    // bien
+    // bé
     dog.set('attr', {
       age: '1 year',
       breed: 'Bernese Mountain Dog'
@@ -769,14 +769,14 @@
   - Deja una línea en blanco al final del archivo.
 
     ```javascript
-    // mal
+    // malament
     (function(global) {
       // ...algo...
     })(this);
     ```
 
     ```javascript
-    // bien
+    // bé
     (function(global) {
       // ...algo...
     })(this);
@@ -786,10 +786,10 @@
   - Usa indentación cuando uses métodos largos con 'chaining'.
 
     ```javascript
-    // mal
+    // malament
     $('#items').find('.selected').highlight().end().find('.open').updateCount();
 
-    // bien
+    // bé
     $('#items')
       .find('.selected')
         .highlight()
@@ -797,13 +797,13 @@
       .find('.open')
         .updateCount();
 
-    // mal
+    // malament
     var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
         .attr('width',  (radius + margin) * 2).append('svg:g')
         .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
         .call(tron.led);
 
-    // bien
+    // bé
     var leds = stage.selectAll('.led')
         .data(data)
       .enter().append('svg:svg')
@@ -821,17 +821,17 @@
   - Comas al inicio de línea: **Nop.**
 
     ```javascript
-    // mal
+    // malament
     var once
       , upon
       , aTime;
 
-    // bien
+    // bé
     var once,
         upon,
         aTime;
 
-    // mal
+    // malament
     var hero = {
         firstName: 'Bob'
       , lastName: 'Parr'
@@ -839,7 +839,7 @@
       , superPower: 'strength'
     };
 
-    // bien
+    // bé
     var hero = {
       firstName: 'Bob',
       lastName: 'Parr',
@@ -853,7 +853,7 @@
   > La Edición 5 aclara el hecho de que dejar una coma al final de un ArrayInitialiser (inicialización de un arreglo) no aumenta la longitud del arreglo. Esto no es un cambio semántico a la Edición 3 pero algunas implementaciones tal vez malinterpretaron esto.
 
     ```javascript
-    // mal
+    // malament
     var hero = {
       firstName: 'Kevin',
       lastName: 'Flynn',
@@ -864,7 +864,7 @@
       'Superman',
     ];
 
-    // bien
+    // bé
     var hero = {
       firstName: 'Kevin',
       lastName: 'Flynn'
@@ -884,19 +884,19 @@
   - **Sip.**
 
     ```javascript
-    // mal
+    // malament
     (function() {
       var name = 'Skywalker'
       return name
     })()
 
-    // bien
+    // bé
     (function() {
       var name = 'Skywalker';
       return name;
     })();
 
-    // bien
+    // bé
     ;(function() {
       var name = 'Skywalker';
       return name;
@@ -914,16 +914,16 @@
     ```javascript
     //  => this.reviewScore = 9;
 
-    // mal
+    // malament
     var totalScore = this.reviewScore + '';
 
-    // bien
+    // bé
     var totalScore = '' + this.reviewScore;
 
-    // mal
+    // malament
     var totalScore = '' + this.reviewScore + ' total score';
 
-    // bien
+    // bé
     var totalScore = this.reviewScore + ' total score';
     ```
 
@@ -932,22 +932,22 @@
     ```javascript
     var inputValue = '4';
 
-    // mal
+    // malament
     var val = new Number(inputValue);
 
-    // mal
+    // malament
     var val = +inputValue;
 
-    // mal
+    // malament
     var val = inputValue >> 0;
 
-    // mal
+    // malament
     var val = parseInt(inputValue);
 
-    // bien
+    // bé
     var val = Number(inputValue);
 
-    // bien
+    // bé
     var val = parseInt(inputValue, 10);
     ```
 
@@ -956,7 +956,7 @@
 
 
     ```javascript
-    // bien
+    // bé
     /**
      * parseInt was the reason my code was slow.
      * Bitshifting the String to coerce it to a
@@ -973,10 +973,10 @@
     // mal
     var hasAge = new Boolean(age);
 
-    // bien
+    // bé
     var hasAge = Boolean(age);
 
-    // bien
+    // bé
     var hasAge = !!age;
     ```
 
@@ -988,12 +988,12 @@
   - Evita nombres de una sola letra. Sé descriptivo con tus nombres.
 
     ```javascript
-    // mal
+    // malament
     function q() {
       // ...algo...
     }
 
-    // bien
+    // bé
     function query() {
       // ...algo...
     }
@@ -1002,7 +1002,7 @@
   - Usa camelCase cuando nombres tus objetos, funciones e instancias.
 
     ```javascript
-    // mal
+    // malament
     var OBJEcttsssss = {};
     var this_is_my_object = {};
     function c() {};
@@ -1010,7 +1010,7 @@
       name: 'Bob Parr'
     });
 
-    // bien
+    // bé
     var thisIsMyObject = {};
     function thisIsMyFunction() {};
     var user = new User({
@@ -1021,7 +1021,7 @@
   - Usa PascalCase cuando nombres constructores o clases.
 
     ```javascript
-    // mal
+    // malament
     function user(options) {
       this.name = options.name;
     }
@@ -1030,7 +1030,7 @@
       name: 'nope'
     });
 
-    // bien
+    // bé
     function User(options) {
       this.name = options.name;
     }
@@ -1043,18 +1043,18 @@
   - Usa un guión bajo `_` adelante de la variable cuando nombres propiedades privadas.
 
     ```javascript
-    // mal
+    // malament
     this.__firstName__ = 'Panda';
     this.firstName_ = 'Panda';
 
-    // bien
+    // bé
     this._firstName = 'Panda';
     ```
 
   - Cuando guardes una referencia a `this` usa `_this`.
 
     ```javascript
-    // mal
+    // malament
     function() {
       var self = this;
       return function() {
@@ -1062,7 +1062,7 @@
       };
     }
 
-    // mal
+    // malament
     function() {
       var that = this;
       return function() {
@@ -1070,7 +1070,7 @@
       };
     }
 
-    // bien
+    // bé
     function() {
       var _this = this;
       return function() {
@@ -1082,12 +1082,12 @@
   - Nombra tus funciones. Esto será de ayuda cuando hagas seguimiento de la pila de llamadas (e.g. en caso de errores).
 
     ```javascript
-    // mal
+    // malament
     var log = function(msg) {
       console.log(msg);
     };
 
-    // bien
+    // bé
     var log = function log(msg) {
       console.log(msg);
     };
@@ -1102,28 +1102,28 @@
   - Si creas funciones de acceso usa  getVal() y setVal('hello').
 
     ```javascript
-    // mal
+    // malament
     dragon.age();
 
-    // bien
+    // bé
     dragon.getAge();
 
-    // mal
+    // malament
     dragon.age(25);
 
-    // bien
+    // bé
     dragon.setAge(25);
     ```
 
   - Si la propiedad es un booleano, usa isVal() o hasVal().
 
     ```javascript
-    // mal
+    // malament
     if (!dragon.age()) {
       return false;
     }
 
-    // bien
+    // bé
     if (!dragon.hasAge()) {
       return false;
     }
@@ -1159,7 +1159,7 @@
       console.log('new jedi');
     }
 
-    // mal
+    // malament
     Jedi.prototype = {
       fight: function fight() {
         console.log('fighting');
@@ -1170,7 +1170,7 @@
       }
     };
 
-    // bien
+    // bé
     Jedi.prototype.fight = function fight() {
       console.log('fighting');
     };
@@ -1183,7 +1183,7 @@
   - Métodos pueden retornar `this` para ayudar con el encadenamiento de métodos (chaining).
 
     ```javascript
-    // mal
+    // malament
     Jedi.prototype.jump = function() {
       this.jumping = true;
       return true;
@@ -1197,7 +1197,7 @@
     luke.jump(); // => true
     luke.setHeight(20) // => undefined
 
-    // bien
+    // bé
     Jedi.prototype.jump = function() {
       this.jumping = true;
       return this;
@@ -1240,7 +1240,7 @@
   - Cuando envies paquetes de datos a los eventos (ya sea con eventos del DOM o algo propietario como los eventos de Backbone), pasa un mapa en vez de un valor directo. Esto permitirá a un próximo colaborador a agregar más datos al paquete de datos sin que tenga que encontrar o actualizar un handler para cada evento. Por ejemplo, en vez de:
 
     ```js
-    // mal
+    // malament
     $(this).trigger('listingUpdated', listing.id);
 
     ...
@@ -1253,7 +1253,7 @@
     prefiere:
 
     ```js
-    // bien
+    // bé
     $(this).trigger('listingUpdated', { listingId : listing.id });
 
     ...
@@ -1302,17 +1302,17 @@
   - Nombre las variables de objetos jQuery con un prefijo `$`.
 
     ```javascript
-    // mal
+    // malament
     var sidebar = $('.sidebar');
 
-    // bien
+    // bé
     var $sidebar = $('.sidebar');
     ```
 
   - Guarde en variables los lookups de jQuery que se necesiten posteriormente.
 
     ```javascript
-    // mal
+    // malament
     function setSidebar() {
       $('.sidebar').hide();
 
@@ -1323,7 +1323,7 @@
       });
     }
 
-    // bien
+    // bé
     function setSidebar() {
       var $sidebar = $('.sidebar');
       $sidebar.hide();
@@ -1340,19 +1340,19 @@
   - Usa `find` solo con consultas guardadas en variables previamente.
 
     ```javascript
-    // mal
+    // malament
     $('ul', '.sidebar').hide();
 
-    // mal
+    // malament
     $('.sidebar').find('ul').hide();
 
-    // bien
+    // bé
     $('.sidebar ul').hide();
 
-    // bien
+    // bé
     $('.sidebar > ul').hide();
 
-    // bien
+    // bé
     $sidebar.find('ul');
     ```
 
