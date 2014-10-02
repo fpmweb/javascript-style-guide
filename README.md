@@ -1477,7 +1477,7 @@
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-## <a name='translation'>Traducciones</a>
+## <a name='translation'>Traduccions</a>
 
   Esta guía de estilo es también disponible en otros lenguajes:
 
@@ -1490,7 +1490,7 @@
   - :fr: **French**: [nmussy/javascript-style-guide](https://github.com/nmussy/javascript-style-guide)
   - :ru: **Russian**: [uprock/javascript](https://github.com/uprock/javascript)
   - :bg: **Bulgarian**: [borislavvv/javascript](https://github.com/borislavvv/javascript)
-  - :cat: **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
+  - ![alt tag](https://raw.githubusercontent.com/fpmweb/javascript-style-guide/master/img/catalan.jpg) **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
 
 ## <a name='guide-guide'>La guía de la Guía de Estilos de Javascript</a>
 
