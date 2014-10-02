@@ -70,7 +70,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[[⬆ rtornar a la Taula del Contingut](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 ## <a name='objects'>Objetos</a>
 
@@ -118,7 +118,7 @@
       type: 'alien'
     };
     ```
-    **[[⬆ rtornar a la Taula del Contingut](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 ## <a name='arrays'>Arreglos</a>
 
@@ -170,7 +170,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='strings'>Cadenas de Texto</a>
@@ -254,7 +254,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='functions'>Funciones</a>
@@ -312,7 +312,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 
@@ -348,7 +348,7 @@
     var isJedi = getProp('jedi');
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='variables'>Variables</a>
@@ -457,7 +457,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='hoisting'>Hoisting</a>
@@ -547,7 +547,7 @@
 
   - Para más información lee [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) por [Ben Cherry](http://www.adequatelygood.com/)
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 
@@ -596,7 +596,7 @@
 
   - Para más información revisa [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) por Angus Croll
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='blocks'>Bloques</a>
@@ -625,7 +625,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='comments'>Comentarios</a>
@@ -718,7 +718,7 @@
     }
   ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='whitespace'>Espacios en blanco</a>
@@ -814,7 +814,7 @@
         .call(tron.led);
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 ## <a name='commas'>Comas</a>
 
@@ -876,7 +876,7 @@
     ];
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='semicolons'>Puntos y Comas</a>
@@ -903,7 +903,7 @@
     })();
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='type-coercion'>Casting de Tipos & Coerción</a>
@@ -980,7 +980,7 @@
     var hasAge = !!age;
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='naming-conventions'>Convenciones de nomenclatura</a>
@@ -1093,7 +1093,7 @@
     };
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='accessors'>Funciones de Acceso</a>
@@ -1147,7 +1147,7 @@
     };
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='constructors'>Constructores</a>
@@ -1232,7 +1232,7 @@
     };
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='events'>Eventos</a>
@@ -1263,7 +1263,7 @@
     });
     ```
 
-  **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+  **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='modules'>Módulos</a>
@@ -1294,7 +1294,7 @@
     }(this);
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='jquery'>jQuery</a>
@@ -1356,7 +1356,7 @@
     $sidebar.find('ul');
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='es5'>Compatibilidad con ECMAScript 5</a>
@@ -1376,7 +1376,7 @@
     }
     ```
 
-    **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+    **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='performance'>Desempeño</a>
@@ -1390,7 +1390,7 @@
   - [Long String Concatenation](http://jsperf.com/ya-string-concat)
   - Loading...
 
-  **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+  **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 
 ## <a name='resources'>Recursos</a>
@@ -1446,7 +1446,7 @@
   - [Dustin Diaz](http://dustindiaz.com/)
   - [nettuts](http://net.tutsplus.com/?s=javascript)
 
-  **[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+  **[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 ## <a name='in-the-wild'>En la cancha</a>
 
@@ -1524,7 +1524,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[[⬆ regresar a la Tabla de Contenido]](#TOC)**
+**[[⬆ tornar a la Taula del Contingut](#TOC)**
 
 # };
 
