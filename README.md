@@ -1490,7 +1490,7 @@
   - :fr: **French**: [nmussy/javascript-style-guide](https://github.com/nmussy/javascript-style-guide)
   - :ru: **Russian**: [uprock/javascript](https://github.com/uprock/javascript)
   - :bg: **Bulgarian**: [borislavvv/javascript](https://github.com/borislavvv/javascript)
-  - ![alt tag](https://raw.githubusercontent.com/fpmweb/javascript-style-guide/master/img/catalan.jpg) **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
+  - ![alt tag](https://raw.githubusercontent.com/fpmweb/javascript-style-guide/master/img/catala.png **Catalan**: [fpmweb/javascript-style-guide](https://github.com/fpmweb/javascript-style-guide)
 
 ## <a name='guide-guide'>La guía de la Guía de Estilos de Javascript</a>
 
