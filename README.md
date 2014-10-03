@@ -1479,7 +1479,7 @@
 
 ## <a name='translation'>Traduccions</a>
 
-  Esta guía de estilo es también disponible en otros lenguajes:
+  Aquesta guia d'estil també esta disponible en altres idiomes:
 
   - :en: **English**: [airbnb/javascript](https://github.com/airbnb/javascript)
   - :de: **German**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
