@@ -1481,6 +1481,7 @@
 
   Esta guía de estilo es también disponible en otros lenguajes:
 
+  - :en: **English**: [airbnb/javascript](https://github.com/airbnb/javascript)
   - :de: **German**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
   - :jp: **Japanese**: [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide)
   - :br: **Portuguese**: [armoucar/javascript-style-guide](https://github.com/armoucar/javascript-style-guide)
